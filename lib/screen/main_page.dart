@@ -14,7 +14,9 @@ class MasterDetailPageState extends State<MasterDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Flutter responsive sample'),
+      ),
       body: OrientationBuilder(builder: (context, orientation) {
         if (MediaQuery.of(context).size.width > 600) {
           isLargeScreen = true;
@@ -24,9 +26,7 @@ class MasterDetailPageState extends State<MasterDetailPage> {
 
         return Row(children: <Widget>[
           Expanded(
-            child: ListWidget(
-                // count: 10,
-                onItemSelected: (value) {
+            child: ListWidget(onItemSelected: (value) {
               if (isLargeScreen) {
                 selectedValue = value;
                 setState(() {});

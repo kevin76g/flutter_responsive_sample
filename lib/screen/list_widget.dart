@@ -3,14 +3,9 @@ import 'package:flutter_responsive_sample/common/importer.dart';
 typedef ItemSelectedCallback = void Function(int value);
 
 class ListWidget extends StatefulWidget {
-  // final int count;
   final ItemSelectedCallback onItemSelected;
 
   const ListWidget({required this.onItemSelected, Key? key}) : super(key: key);
-
-  // const ListWidget(
-  //     {required this.count, required this.onItemSelected, Key? key})
-  //     : super(key: key);
 
   @override
   ListWidgetState createState() => ListWidgetState();
@@ -35,7 +30,6 @@ class ListWidgetState extends State<ListWidget> {
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
-                      // position.toString(),
                       map['name'].toString(),
                       style: const TextStyle(fontSize: 22.0),
                     ),

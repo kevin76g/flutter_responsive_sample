@@ -1,9 +1,27 @@
 //fruits data from https://github.com/knadh/xmlutils.py/blob/master/samples/fruits.json
 
 const List<Map<String, Object>> fruitRawData = [
-  {"price": "4", "quantity": "133", "id": "1000", "name": "apple"},
-  {"price": "5", "quantity": "175", "id": "1001", "name": "apricot"},
-  {"price": "5", "quantity": "182", "id": "1002", "name": "avocado"},
+  {
+    "price": "4",
+    "quantity": "133",
+    "id": "1000",
+    "name": "apple",
+    "author": "Photo by Marek Studzinski on Unsplash"
+  },
+  {
+    "price": "5",
+    "quantity": "175",
+    "id": "1001",
+    "name": "apricot",
+    "author": "Photo by Jared Subia on Unsplash"
+  },
+  {
+    "price": "5",
+    "quantity": "182",
+    "id": "1002",
+    "name": "avocado",
+    "author": "Photo by Irene Kredenets on Unsplash"
+  },
   {"price": "5", "quantity": "187", "id": "1003", "name": "banana"},
   {"price": "5", "quantity": "160", "id": "1004", "name": "bilberry"},
   {"price": "4", "quantity": "178", "id": "1005", "name": "blackberry"},
